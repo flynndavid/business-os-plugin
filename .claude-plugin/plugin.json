@@ -1,0 +1,19 @@
+{
+  "name": "business-os",
+  "version": "1.1.0",
+  "description": "Business OS Workspace Setup — guides users to organize their local file workspace for AI/agentic use, generate a canonical Business OS folder of markdown files (Offers, Pipeline, Delivery, Proof, Ops, Learned, Scoreboard), and emit CLAUDE.md instruction files so AI agents know how to navigate. v1.1 adds: workspace-audit phase with Claude-safe boundaries, CLAUDE.md generation, inferred (not hard-coded) business calibration, and flexible file naming for portfolio businesses (real estate, STR, content, e-commerce).",
+  "author": {
+    "name": "Automatic",
+    "email": "david@automatic.so",
+    "url": "https://davidflynn.co"
+  },
+  "keywords": [
+    "business-os",
+    "workspace",
+    "ai-ready",
+    "claude-md",
+    "operations",
+    "organization",
+    "file-management"
+  ]
+}
