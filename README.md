@@ -20,15 +20,16 @@ Every step follows **RESEARCH → ASK → GENERATE**:
 
 No business types are hard-coded. The skill infers from available data and adapts file names + sections to the business shape (service biz, agency, SaaS, property portfolio, content creator, e-commerce, mix).
 
-## Install (Cowork / Claude Code)
+## Install (Claude Code / Cowork)
+
+This repo is a Claude Code plugin marketplace. Add it once, then install the plugin from the catalog:
 
 ```bash
-# From the user's plugin marketplace, or by adding this repo as a marketplace source:
-/plugin marketplace add <github-url>
-/plugin install business-os
+/plugin marketplace add flynndavid/business-os-plugin
+/plugin install business-os@automatic-plugins
 ```
 
-Or clone this repo into the user's plugin directory and restart Claude Code / Cowork.
+Or paste `https://github.com/flynndavid/business-os-plugin` into Cowork's **Add marketplace** dialog, sync, and install **business-os** from the catalog.
 
 ## Use
 
@@ -42,28 +43,32 @@ After install, the skill triggers automatically on prompts like:
 ## Structure
 
 ```
-business-os/
+business-os-plugin/                       # marketplace repo
 ├── .claude-plugin/
-│   └── plugin.json
+│   └── marketplace.json                  # marketplace catalog
 ├── README.md
-└── skills/
-    └── business-os/
-        ├── SKILL.md
-        ├── assets/templates/
-        │   ├── 00-README.md          # Human overview of the BusinessOS folder
-        │   ├── 01-Offers.md          # What we sell, ICP, pricing, objections
-        │   ├── 02-Pipeline.md        # Active deals + next actions
-        │   ├── 03-Delivery.md        # SOPs + definitions of done
-        │   ├── 04-Proof.md           # Case studies, testimonials, results
-        │   ├── 05-Ops.md             # Tools, recurring tasks, risk list
-        │   ├── 06-Learned.md         # Decisions, experiments, lessons
-        │   ├── 07-Scoreboard.md      # Weekly numbers + targets
-        │   ├── CLAUDE.md             # AI-instruction file for the BusinessOS folder
-        │   ├── Workspace-Plan.md     # Output of the workspace audit phase
-        │   ├── Client-Onboarding.md  # Per-client onboarding template
-        │   └── Proposal.md           # Standard proposal template
-        └── references/
-            └── examples.md           # Fallback shape patterns
+└── plugins/
+    └── business-os/                      # the plugin
+        ├── .claude-plugin/
+        │   └── plugin.json
+        └── skills/
+            └── business-os/
+                ├── SKILL.md
+                ├── assets/templates/
+                │   ├── 00-README.md          # Human overview of the BusinessOS folder
+                │   ├── 01-Offers.md          # What we sell, ICP, pricing, objections
+                │   ├── 02-Pipeline.md        # Active deals + next actions
+                │   ├── 03-Delivery.md        # SOPs + definitions of done
+                │   ├── 04-Proof.md           # Case studies, testimonials, results
+                │   ├── 05-Ops.md             # Tools, recurring tasks, risk list
+                │   ├── 06-Learned.md         # Decisions, experiments, lessons
+                │   ├── 07-Scoreboard.md      # Weekly numbers + targets
+                │   ├── CLAUDE.md             # AI-instruction file for the BusinessOS folder
+                │   ├── Workspace-Plan.md     # Output of the workspace audit phase
+                │   ├── Client-Onboarding.md  # Per-client onboarding template
+                │   └── Proposal.md           # Standard proposal template
+                └── references/
+                    └── examples.md           # Fallback shape patterns
 ```
 
 ## Author

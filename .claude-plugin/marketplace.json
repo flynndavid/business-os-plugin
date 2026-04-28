@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "automatic-plugins",
+  "description": "Plugins by Automatic — AI-ready workspaces, business operating systems, and tooling for solo founders and small teams.",
+  "owner": {
+    "name": "Automatic",
+    "email": "david@automatic.so"
+  },
+  "plugins": [
+    {
+      "name": "business-os",
+      "source": "./plugins/business-os",
+      "description": "Guides users through setting up an AI-ready local workspace and generates a canonical Business OS folder of markdown files (Offers, Pipeline, Delivery, Proof, Ops, Learned, Scoreboard) plus CLAUDE.md instruction files.",
+      "version": "1.1.0",
+      "author": {
+        "name": "Automatic",
+        "email": "david@automatic.so",
+        "url": "https://davidflynn.co"
+      },
+      "homepage": "https://github.com/flynndavid/business-os-plugin",
+      "repository": "https://github.com/flynndavid/business-os-plugin",
+      "license": "MIT",
+      "category": "productivity",
+      "tags": [
+        "business-os",
+        "workspace",
+        "ai-ready",
+        "claude-md",
+        "operations",
+        "organization",
+        "file-management"
+      ]
+    }
+  ]
+}
